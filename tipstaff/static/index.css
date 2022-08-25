@@ -1,0 +1,14 @@
+nav .logo{
+    color: rgb(255, 255, 255);
+}
+
+nav li a{
+    text-decoration: none;
+}
+
+nav li{
+    text-decoration: none;
+    margin:0 2vh;
+    padding: 0 3vh;
+    border-radius: 10px;
+}
