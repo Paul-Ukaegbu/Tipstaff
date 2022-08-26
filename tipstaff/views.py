@@ -1,13 +1,14 @@
+from multiprocessing import context
 from django.shortcuts import render,redirect
+from django.views.decorators.csrf import csrf_exempt
 
-def index(request):
+def home(request):
+    firstName = "Paul"
+    lastName = "Ukaegbu"
+    post = request.GET.get('textN')
     context = {
-        "body": "Hello everyone!"
+        "firstName": firstName,
+        "lastName": lastName,
+        "post": post
     }
-    return render(request, 'index.html', context)
-
-def login(request):
-    return render(request, 'login.html')
-
-def signup(response):
-    return render(request, 'signup.html')
+    return render(request, 'tipstaff/home.html', context)
