@@ -15,8 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from tipstaff import views as tipstaff_view
+from django.contrib.auth import views as auth
+
 
 urlpatterns = [
     path('', include('tipstaff.urls')),
     path('admin/', admin.site.urls),
+    
+    ########### User related path ######################
+    path('login/', tipstaff_view.login, name='login'),
+    path('logout/', auth.LogoutView.as_view(template_name ='tipstaff/index.html'), name ='logout'),
+    path('register/', tipstaff_view.register, name ='register'),
+    
 ]

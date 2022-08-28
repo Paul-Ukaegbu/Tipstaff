@@ -1,11 +1,12 @@
+from django.urls import path, include
 from django.contrib import admin
-from django.urls import path
-from tipstaff import views as v
+from django.conf import settings
 from . import views
+from django.conf.urls.static import static
+#app_name = "main"
 
 urlpatterns= [
-   path('', views.index, name='index'),
-   path('admin/', admin.site.urls),
-   path('login/', v.login, name='login'),
-   path('signup/', v.signup, name='signup'),
+   path('', views.home, name='home'),
+   path('', views.index, name ='index'),
+   path('', views.login, name ='login'),
 ]
