@@ -22,10 +22,8 @@ from django.contrib.auth import views as auth
 urlpatterns = [
     path('', include('tipstaff.urls')),
     path('admin/', admin.site.urls),
-    
-    ########### User related path ######################
     path('login/', tipstaff_view.login, name='login'),
-    path('logout/', auth.LogoutView.as_view(template_name ='tipstaff/index.html'), name ='logout'),
-    path('register/', tipstaff_view.register, name ='register'),
+    path('signup/', tipstaff_view.signup, name ='signup'),
+
     
 ]
