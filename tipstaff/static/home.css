@@ -1,3 +1,25 @@
+/* font-family: 'Bebas Neue',
+cursive;
+font-family: 'Black Ops One',
+cursive;
+font-family: 'Caveat',
+cursive;
+font-family: 'Oleo Script',
+cursive;
+font-family: 'Paytone One',
+sans-serif;
+font-family: 'Quicksand',
+sans-serif;
+font-family: 'Roboto',
+sans-serif;
+font-family: 'Sacramento',
+cursive;
+font-family: 'Satisfy',
+cursive;
+font-family: 'Signika Negative',
+sans-serif; */
+
+
 *{
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -10,7 +32,7 @@ nav .logo{
     text-align: center;
     color: rgb(255, 255, 255);
     font-size: larger;
-    font-family: 'Lobster', cursive;
+    font-family: 'Satisfy', cursive;
 }
 
 nav .username{
